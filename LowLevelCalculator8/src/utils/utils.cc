@@ -1,4 +1,4 @@
-#include "utils.hpp"
+#include "../include/utils.h"
 
 int absolute(int x)
 {
@@ -54,9 +54,9 @@ mult:
 int cur = 1;
 if(cur * y > x) cur = 0 x - cur * y
 */
-float division(int x, int y)
+int division(int x, int y)
 {
-  float res = 0;
+  int res = 0;
   int sign = 1;
   if ((x < 0) ^ (y < 0))
     sign = -1;
@@ -82,13 +82,4 @@ power:
   if (y > 0)
     goto power;
   return res;
-}
-
-int main()
-{
-  std::cout << addition(-5, -5) << "\n";
-  std::cout << substraction(-7, -5) << "\n";
-  std::cout << multiplication(-5, -3) << "\n";
-  std::cout << division(1, 81) << "\n";
-  std::cout << power(10, -5) << "\n";
 }

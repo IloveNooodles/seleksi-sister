@@ -1,6 +1,7 @@
 pub mod utils;
 fn main() {
     println!("Hello, world!");
-    let a = utils::addition(1, 2);
+    let a = utils::utils::ffi::power(33, 2);
     println!("{} is 3", a);
-  }
+    utils::parser::parseString();
+}
