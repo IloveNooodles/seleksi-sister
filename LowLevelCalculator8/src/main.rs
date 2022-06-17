@@ -25,8 +25,6 @@ fn main() {
 
     let char_vector: Vec<_> = input.trim().split_whitespace().collect();
 
-    println!("{:?}", char_vector);
-
     for character in char_vector {
         if let Ok(x) = character.parse() {
             stack.push(x);
