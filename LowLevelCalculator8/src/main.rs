@@ -8,6 +8,11 @@ fn main() {
     let mut stack: Vec<i32> = vec![];
     let mut operations: &str = "_";
     let mut err: bool = false;
+
+    println!("Welcome to low level calculator made by rust :D");
+    println!("To use the calculator just input the expression as usual: ex 1 + 2 * 3");
+    println!("make sure to just only have 1 space between each number/operation");
+    println!("The calculator only works with integer :D so please keep that in mind");
     // read the input
     io::stdin()
         .read_line(&mut input)
